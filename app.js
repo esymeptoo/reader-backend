@@ -1,4 +1,5 @@
 const Koa = require('koa');
+
 // import applyMiddleware from './middleware';
 const applyMiddleware = require('./middleware');
 const api = require('./api');

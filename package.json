@@ -9,9 +9,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "co": "^4.6.0",
     "debug": "^2.6.3",
     "glob": "^7.1.2",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "iconv-lite": "^0.4.23",
     "jade": "~1.11.0",
     "kcors": "^2.2.1",
     "koa": "^2.3.0",
@@ -22,7 +26,9 @@
     "koa-logger": "^3.0.1",
     "koa-mount": "^3.0.0",
     "koa-router": "^7.2.1",
-    "koa-static": "^4.0.0"
+    "koa-static": "^4.0.0",
+    "koa2-cors": "^2.0.5",
+    "request": "^2.85.0"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"

@@ -1,5 +1,12 @@
+const GrepNovel = require('../../services/test');
+
 module.exports = {
     testFunction: async (ctx) => {
-        ctx.body = 'success'
+        const res = await GrepNovel();
+        ctx.body = {
+            code: 300,
+            html: res
+        };
+        ctx.status = 200;
     }
 }

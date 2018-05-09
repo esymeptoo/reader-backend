@@ -8,7 +8,9 @@ const path = require('path');
 
 function ApplyMiddleware(app) {
     app.proxy = true;
-    app.use(cors({credentials: false}));
+    app.use(cors({
+        credentials: true
+    }));
     app.use(logger());
     app.use(bodyParser());
     app.use(mount(
