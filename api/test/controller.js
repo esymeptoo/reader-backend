@@ -4,7 +4,7 @@ module.exports = {
     testFunction: async (ctx) => {
         const res = await GrepNovel();
         ctx.body = {
-            code: 300,
+            code: 200,
             html: res
         };
         ctx.status = 200;
